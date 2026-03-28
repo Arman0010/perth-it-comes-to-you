@@ -6,7 +6,7 @@ import QuoteFormSection from "@/components/QuoteFormSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => (
-  <div className="min-h-screen pt-28">
+  <div className="min-h-screen pt-24">
     <Navbar />
     <HeroSection />
     <ServicesSection />

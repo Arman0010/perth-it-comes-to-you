@@ -35,6 +35,7 @@ const QuoteFormSection = () => {
           Address: form.address,
           "Service Description": form.description,
           _subject: `New Quote Request from ${form.name}`,
+          _template: "table",
         }),
       });
 

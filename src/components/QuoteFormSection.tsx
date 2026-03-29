@@ -25,7 +25,7 @@ const QuoteFormSection = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/arman@tipu0010.com", {
+      const response = await fetch("https://formsubmit.co/ajax/tipu0010@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({

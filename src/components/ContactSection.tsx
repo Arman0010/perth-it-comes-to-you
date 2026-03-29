@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, MapPin, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, Globe, MapPin, Facebook } from "lucide-react";
 
 const contacts = [
   { icon: Phone, label: "Phone", value: "0424 558 244", href: "tel:0424558244" },
@@ -33,11 +33,8 @@ const ContactSection = () => (
       </div>
 
       <div className="flex items-center justify-center gap-4 mt-10">
-        <a href="https://www.facebook.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+        <a href="https://facebook.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
           <Facebook className="h-5 w-5 text-primary-foreground" />
-        </a>
-        <a href="https://www.instagram.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
-          <Instagram className="h-5 w-5 text-primary-foreground" />
         </a>
       </div>
 

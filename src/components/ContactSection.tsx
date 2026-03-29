@@ -33,11 +33,8 @@ const ContactSection = () => (
       </div>
 
       <div className="flex items-center justify-center gap-4 mt-10">
-        <a href="https://www.facebook.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+        <a href="https://facebook.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
           <Facebook className="h-5 w-5 text-primary-foreground" />
-        </a>
-        <a href="https://www.instagram.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
-          <Instagram className="h-5 w-5 text-primary-foreground" />
         </a>
       </div>
 

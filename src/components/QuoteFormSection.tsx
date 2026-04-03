@@ -79,8 +79,8 @@ const QuoteFormSection = () => {
             <Input id="email" name="email" type="email" required value={form.email} onChange={handleChange} placeholder="john@example.com" />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">Mobile Number</label>
-            <Input id="phone" name="phone" type="tel" value={form.phone} onChange={handleChange} placeholder="0400 000 000" />
+            <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">Mobile Number *</label>
+            <Input id="phone" name="phone" type="tel" required value={form.phone} onChange={handleChange} placeholder="0400 000 000" />
           </div>
           <div>
             <label htmlFor="address" className="block text-sm font-medium text-foreground mb-1.5">Address *</label>

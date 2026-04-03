@@ -25,13 +25,13 @@ const QuoteFormSection = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/tipu0010@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/arman@armanitsolutions.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           "Full Name": form.name,
           Email: form.email,
-          "Mobile Number": form.phone || "Not provided",
+          "Mobile Number": form.phone,
           Address: form.address,
           "Service Description": form.description,
           _subject: `New Quote Request from ${form.name}`,

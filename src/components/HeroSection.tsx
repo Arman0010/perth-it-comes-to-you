@@ -19,10 +19,10 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 md:px-8 py-20">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6">
-            Perth Mobile IT Support – We Come to You
+            On-site IT Support – We Come to You
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl leading-relaxed">
-            Fast, reliable IT support at your home or business in Perth. From computer repairs to WiFi setup — we've got you covered.
+            Fast, reliable IT support delivered directly to your home or office in Perth. From laptop repairs to WiFi setup — we've got you covered.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">

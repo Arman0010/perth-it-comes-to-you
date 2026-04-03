@@ -46,8 +46,6 @@ const ContactSection = () => (
       <p className="text-primary-foreground/60 text-sm mt-6">
         © {new Date().getFullYear()} Arman IT. All rights reserved.
       </p>
-        © {new Date().getFullYear()} Arman IT. All rights reserved.
-      </p>
     </div>
   </section>
 );

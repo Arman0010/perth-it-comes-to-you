@@ -1,10 +1,10 @@
 import { MapPin, Zap, Heart, BadgeCheck } from "lucide-react";
 
 const reasons = [
-  { icon: MapPin, title: "We Come to You", desc: "Mobile service across Perth — home or office" },
+  { icon: MapPin, title: "Servicing All Areas in Perth", desc: "On-site support across every suburb — home or office" },
   { icon: Zap, title: "Same-Day Service", desc: "Available for urgent issues when you need us most" },
   { icon: Heart, title: "Friendly & Patient", desc: "We explain everything in plain language" },
-  { icon: BadgeCheck, title: "No Fix, No Fee", desc: "You only pay if we solve your problem" },
+  { icon: BadgeCheck, title: "No Fix, No Fee", desc: "You only pay if we solve your problem — guaranteed" },
 ];
 
 const WhyChooseUsSection = () => (

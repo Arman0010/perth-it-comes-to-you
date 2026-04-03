@@ -43,7 +43,13 @@ const ContactSection = () => (
         </a>
       </div>
 
-      <p className="text-primary-foreground/60 text-sm mt-6">
+      <div className="mt-10 flex flex-wrap items-center justify-center gap-4 text-primary-foreground/80 text-sm font-medium">
+        <span>📍 Servicing all areas in Perth</span>
+        <span className="hidden sm:inline">•</span>
+        <span>✅ No fix, no fee guarantee</span>
+      </div>
+
+      <p className="text-primary-foreground/60 text-sm mt-4">
         © {new Date().getFullYear()} Arman IT. All rights reserved.
       </p>
     </div>

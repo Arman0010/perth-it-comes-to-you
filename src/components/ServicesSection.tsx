@@ -1,16 +1,14 @@
 import {
-  Monitor, Printer, Wifi, Mail, Smartphone, ShieldCheck, Tv, Network,
+  Monitor, Printer, Wifi, Mail, Smartphone, ShieldCheck,
 } from "lucide-react";
 
 const services = [
-  { icon: Monitor, title: "Computer Troubleshooting", desc: "Windows & macOS diagnosis and repair" },
-  { icon: Printer, title: "Printer & Scanner Setup", desc: "Install, configure and troubleshoot printers" },
-  { icon: Wifi, title: "WiFi & Internet Issues", desc: "Fix dropouts, slow speeds and connectivity" },
-  { icon: Network, title: "Mesh WiFi Setup", desc: "Whole-home coverage with mesh systems" },
-  { icon: Mail, title: "Email Setup & Recovery", desc: "Gmail, Outlook, Apple ID setup and recovery" },
-  { icon: Smartphone, title: "Phone Setup", desc: "iPhone & Android setup, transfers and support" },
-  { icon: ShieldCheck, title: "Virus Removal", desc: "Malware detection, removal and protection" },
-  { icon: Tv, title: "Smart TV Setup", desc: "Streaming apps, casting and connectivity" },
+  { icon: Monitor, title: "Computer & Laptop Troubleshooting", desc: "Windows & Mac diagnosis, repair and optimisation" },
+  { icon: Wifi, title: "WiFi & Internet Issues & Mesh WiFi Setup", desc: "Fix dropouts, slow speeds and whole-home mesh coverage" },
+  { icon: Printer, title: "Printer & Scanner Setup", desc: "Install, configure and troubleshoot printers & scanners" },
+  { icon: Mail, title: "Email & Apple ID Recovery", desc: "Gmail, Outlook, Apple ID setup and account recovery" },
+  { icon: Smartphone, title: "Phone Setup (iPhone & Android)", desc: "Setup, data transfers and ongoing support" },
+  { icon: ShieldCheck, title: "Virus & Malware Removal", desc: "Detection, removal and ongoing protection" },
 ];
 
 const ServicesSection = () => (
@@ -19,11 +17,11 @@ const ServicesSection = () => (
       <div className="text-center mb-14">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Our Services</h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Professional IT support for homes and businesses across Perth
+          Professional on-site IT support for homes and businesses across Perth
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s) => (
           <div
             key={s.title}

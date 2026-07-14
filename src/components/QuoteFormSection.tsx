@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 import { Send } from "lucide-react";
 
 const QuoteFormSection = () => {
@@ -25,30 +26,30 @@ const QuoteFormSection = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/arman@armanitsolutions.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          "Full Name": form.name,
-          Email: form.email,
-          "Mobile Number": form.phone,
-          Address: form.address,
-          "Service Description": form.description,
-          _subject: `New Quote Request from ${form.name}`,
-          _template: "table",
-        }),
+      const idempotencyKey = `quote-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+      const { error } = await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "quote-request",
+          idempotencyKey,
+          templateData: {
+            name: form.name,
+            email: form.email,
+            phone: form.phone,
+            address: form.address,
+            description: form.description,
+          },
+        },
       });
 
-      if (response.ok) {
-        toast({
-          title: "Thanks! We'll contact you shortly.",
-          description: "Your quote request has been sent successfully.",
-        });
-        setForm({ name: "", email: "", phone: "", address: "", description: "" });
-      } else {
-        throw new Error("Failed");
-      }
-    } catch {
+      if (error) throw error;
+
+      toast({
+        title: "Thanks! We'll contact you shortly.",
+        description: "Your quote request has been sent successfully.",
+      });
+      setForm({ name: "", email: "", phone: "", address: "", description: "" });
+    } catch (err) {
+      console.error("Quote form error:", err);
       toast({
         title: "Something went wrong",
         description: "Please try calling us directly at 0424 558 244.",

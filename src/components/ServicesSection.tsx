@@ -66,7 +66,7 @@ const ServicesSection = () => (
       </div>
 
       <div className="mb-16">
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center justify-center gap-3 mb-8">
           <Home className="h-6 w-6 text-primary" />
           <h3 className="text-2xl font-bold text-foreground">Home IT Services</h3>
         </div>

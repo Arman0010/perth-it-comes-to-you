@@ -46,8 +46,8 @@ const businessServices = [
 ];
 
 const ServiceCard = ({ icon: Icon, title, desc }: { icon: React.ElementType; title: string; desc: string }) => (
-  <div className="bg-card rounded-lg p-6 shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-    <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
+  <div className="bg-card rounded-lg p-6 shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-center max-w-sm w-full">
+    <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4 mx-auto">
       <Icon className="h-6 w-6 text-accent-foreground" />
     </div>
     <h3 className="font-semibold text-foreground mb-2">{title}</h3>

@@ -46,8 +46,8 @@ const businessServices = [
 ];
 
 const ServiceCard = ({ icon: Icon, title, desc }: { icon: React.ElementType; title: string; desc: string }) => (
-  <div className="bg-card rounded-lg p-6 shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-    <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4">
+  <div className="bg-card rounded-lg p-6 shadow-sm border border-border hover:shadow-md hover:-translate-y-1 transition-all duration-300 text-center max-w-sm w-full">
+    <div className="w-12 h-12 rounded-lg bg-accent flex items-center justify-center mb-4 mx-auto">
       <Icon className="h-6 w-6 text-accent-foreground" />
     </div>
     <h3 className="font-semibold text-foreground mb-2">{title}</h3>
@@ -66,23 +66,23 @@ const ServicesSection = () => (
       </div>
 
       <div className="mb-16">
-        <div className="flex items-center gap-3 mb-8">
+        <div className="flex items-center justify-center gap-3 mb-8">
           <Home className="h-6 w-6 text-primary" />
           <h3 className="text-2xl font-bold text-foreground">Home IT Services</h3>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center justify-items-center">
           {homeServices.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}
         </div>
       </div>
 
-      <div>
-        <div className="flex items-center gap-3 mb-8">
+        <div>
+        <div className="flex items-center justify-center gap-3 mb-8">
           <Building2 className="h-6 w-6 text-primary" />
           <h3 className="text-2xl font-bold text-foreground">Small Business IT Support</h3>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center justify-items-center">
           {businessServices.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}

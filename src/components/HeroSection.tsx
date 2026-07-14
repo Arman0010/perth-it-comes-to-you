@@ -22,7 +22,7 @@ const HeroSection = () => {
             On-site IT Support – We Come to You
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl leading-relaxed">
-            Fast, reliable IT support delivered directly to your business in Perth. From laptop repairs and WiFi setup to office tech solutions — we keep your team connected and productive.
+            Fast, reliable IT support delivered directly to your home or business in Perth. From network setup to office tech solutions — we keep you connected and productive.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">

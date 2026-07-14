@@ -70,7 +70,7 @@ const ServicesSection = () => (
           <Home className="h-6 w-6 text-primary" />
           <h3 className="text-2xl font-bold text-foreground">Home IT Services</h3>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center justify-items-center">
           {homeServices.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}

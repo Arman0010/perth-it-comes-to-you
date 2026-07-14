@@ -77,12 +77,12 @@ const ServicesSection = () => (
         </div>
       </div>
 
-      <div>
-        <div className="flex items-center gap-3 mb-8">
+        <div>
+        <div className="flex items-center justify-center gap-3 mb-8">
           <Building2 className="h-6 w-6 text-primary" />
           <h3 className="text-2xl font-bold text-foreground">Small Business IT Support</h3>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center justify-items-center">
           {businessServices.map((s) => (
             <ServiceCard key={s.title} {...s} />
           ))}

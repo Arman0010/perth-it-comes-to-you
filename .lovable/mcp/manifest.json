@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "sdk_version": "0.22.2",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "arman-it-mcp",
+      "version": "0.1.0",
+      "title": "Arman IT"
+    },
+    "tools": [
+      {
+        "name": "get_business_info",
+        "title": "Get business info",
+        "description": "Return Arman IT contact details, service area, phone, WhatsApp, email, and website.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "List services",
+        "description": "Return the full list of home and small business IT services Arman IT offers in Perth.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "submit_quote_request",
+        "title": "Submit quote request",
+        "description": "Submit a quote request to Arman IT. Sends the same email as the website contact form. Use only with the customer's explicit consent.",
+        "annotations": {
+          "readOnlyHint": false,
+          "openWorldHint": true
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Customer full name."
+            },
+            "email": {
+              "type": "string",
+              "format": "email",
+              "pattern": "^(?!\\.)(?!.*\\.\\.)([A-Za-z0-9_'+\\-\\.]*)[A-Za-z0-9_+-]@([A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$",
+              "description": "Customer email address."
+            },
+            "phone": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Customer mobile number."
+            },
+            "address": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Service address in Perth."
+            },
+            "description": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Description of the IT issue or service needed."
+            }
+          },
+          "required": [
+            "name",
+            "email",
+            "phone",
+            "address",
+            "description"
+          ]
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}

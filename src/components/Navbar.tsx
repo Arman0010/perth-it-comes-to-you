@@ -14,6 +14,7 @@ const Navbar = () => {
 
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
           <button onClick={() => scrollTo("services")} className="hover:text-primary transition-colors">Services</button>
+          <button onClick={() => scrollTo("faq")} className="hover:text-primary transition-colors">FAQ</button>
           <button onClick={() => scrollTo("quote-form")} className="hover:text-primary transition-colors">Get a Quote</button>
         </nav>
 

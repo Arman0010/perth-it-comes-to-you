@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, MapPin, Facebook } from "lucide-react";
+import { Phone, Mail, Globe, MapPin, Facebook, Linkedin } from "lucide-react";
 
 const contacts = [
   { icon: Phone, label: "Phone", value: "0424 558 244", href: "tel:0424558244" },

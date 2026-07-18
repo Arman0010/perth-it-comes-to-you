@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, MapPin, Facebook } from "lucide-react";
+import { Phone, Mail, Globe, MapPin, Facebook, Linkedin } from "lucide-react";
 
 const contacts = [
   { icon: Phone, label: "Phone", value: "0424 558 244", href: "tel:0424558244" },
@@ -35,6 +35,9 @@ const ContactSection = () => (
       <div className="flex items-center justify-center gap-4 mt-10">
         <a href="https://facebook.com/armanitsolutions" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
           <Facebook className="h-5 w-5 text-primary-foreground" />
+        </a>
+        <a href="https://www.linkedin.com/company/arman-it-solutions/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
+          <Linkedin className="h-5 w-5 text-primary-foreground" />
         </a>
         <a href="https://wa.me/61424558244" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-foreground" fill="currentColor" viewBox="0 0 24 24">
